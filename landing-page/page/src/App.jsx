@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState  } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [length, setLength] = useState(8)
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  const [charAllowed, setCharAllowed] = useState(false)
+  const [password, setPassword] = useState("")
+
+  
+
+  let str = "ABCDEGHIJKLMNOPQRSTUVWXYZ"
 
   return (
     <>
-      
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+
     </>
   )
 }
